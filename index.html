@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksham | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Aksham<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Aksham</span></h1>
+            <h2>I'm a <span id="typing"></span></h2>
+            <p class="hero-description">
+                I build modern, responsive and interactive websites.
+                Passionate about frontend development, backend technologies
+                and creating amazing digital experiences.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">Explore My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:aksham@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+       <div class="hero-image">
+    <div class="profile-circle">
+        <img src="pic.jpg" alt="Aksham - Full Stack Developer">
+    </div>
+
+    <div class="floating-card card-one">
+        <i class="fab fa-html5"></i> HTML
+    </div>
+
+    <div class="floating-card card-two">
+        <i class="fab fa-js"></i> JavaScript
+    </div>
+
+    <div class="floating-card card-three">
+        <i class="fab fa-css3-alt"></i> CSS
+    </div>
+</div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="about-text">
+                <h3>Full Stack Developer in Progress</h3>
+                <p>
+                    Hello! I'm Aksham, a passionate Full Stack Developer
+                    learning to create beautiful and functional web applications.
+                    I enjoy turning ideas into real-world projects using
+                    modern web technologies.
+                </p>
+                <p>
+                    My goal is to become a skilled developer who can build
+                    complete web applications, from attractive user interfaces
+                    to powerful backend systems.
+                </p>
+                <a href="#contact" class="btn primary-btn">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills" id="skills">
+        <div class="section-heading">
+            <p>WHAT I WORK WITH</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5 html"></i><h3>HTML5</h3><p>Web Structure</p></div>
+            <div class="skill-card"><i class="fab fa-css3-alt css"></i><h3>CSS3</h3><p>Styling & Design</p></div>
+            <div class="skill-card"><i class="fab fa-js js"></i><h3>JavaScript</h3><p>Interactivity</p></div>
+           
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects" id="projects">
+        <div class="section-heading">
+            <p>MY RECENT WORK</p>
+            <h2>Mini <span>Projects</span></h2>
+            <p class="heading-description">Some interactive projects built using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- EXPENSE TRACKER -->
+            <div class="project-card">
+                <div class="project-icon expense-icon"><i class="fas fa-wallet"></i></div>
+                <h3>Expense Tracker</h3>
+                <p>Track your daily expenses, manage spending and calculate your total expenses.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <button class="btn primary-btn project-btn" onclick="openProject('expense')">Live Demo <i class="fas fa-external-link-alt"></i></button>
+            </div>
+
+            <!-- CALCULATOR -->
+            <div class="project-card">
+                <div class="project-icon calculator-icon"><i class="fas fa-calculator"></i></div>
+                <h3>Smart Calculator</h3>
+                <p>A simple interactive calculator for addition, subtraction, multiplication and division.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <button class="btn primary-btn project-btn" onclick="openProject('calculator')">Live Demo <i class="fas fa-external-link-alt"></i></button>
+            </div>
+
+            <!-- TODO LIST -->
+            <div class="project-card">
+                <div class="project-icon todo-icon"><i class="fas fa-list-check"></i></div>
+                <h3>To-Do List</h3>
+                <p>Organize your daily tasks, mark completed tasks and stay productive.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <button class="btn primary-btn project-btn" onclick="openProject('todo')">Live Demo <i class="fas fa-external-link-alt"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECT DEMO MODAL -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeProject()" aria-label="Close">&times;</button>
+
+            <div id="expenseApp" class="mini-app">
+                <h2><i class="fas fa-wallet"></i> Expense Tracker</h2>
+                <p class="app-subtitle">Manage your daily expenses</p>
+
+                <div class="expense-total">
+                    <small>Total Expenses</small>
+                    <h2 id="totalExpense">₹0.00</h2>
+                </div>
+
+                <div class="expense-inputs">
+                    <input type="text" id="expenseName" placeholder="Expense name">
+                    <input type="number" id="expenseAmount" placeholder="Amount (₹)" min="0.01" step="0.01">
+                    <button class="btn primary-btn" onclick="addExpense()">Add Expense</button>
+                </div>
+
+                <h3>Transaction History</h3>
+                <ul id="expenseList" class="app-list"></ul>
+            </div>
+
+            <div id="calculatorApp" class="mini-app">
+                <h2><i class="fas fa-calculator"></i> Smart Calculator</h2>
+                <div class="calculator">
+                    <input type="text" id="calcDisplay" value="0" readonly>
+                    <div class="calculator-buttons">
+                        <button class="calc-clear" onclick="clearCalc()">AC</button>
+                        <button onclick="appendCalc('(')">(</button>
+                        <button onclick="appendCalc(')')">)</button>
+                        <button class="calc-operator" onclick="appendCalc('/')">÷</button>
+
+                        <button onclick="appendCalc('7')">7</button>
+                        <button onclick="appendCalc('8')">8</button>
+                        <button onclick="appendCalc('9')">9</button>
+                        <button class="calc-operator" onclick="appendCalc('*')">×</button>
+
+                        <button onclick="appendCalc('4')">4</button>
+                        <button onclick="appendCalc('5')">5</button>
+                        <button onclick="appendCalc('6')">6</button>
+                        <button class="calc-operator" onclick="appendCalc('-')">−</button>
+
+                        <button onclick="appendCalc('1')">1</button>
+                        <button onclick="appendCalc('2')">2</button>
+                        <button onclick="appendCalc('3')">3</button>
+                        <button class="calc-operator" onclick="appendCalc('+')">+</button>
+
+                        <button onclick="appendCalc('0')">0</button>
+                        <button onclick="appendCalc('.')">.</button>
+                        <button class="calc-delete" onclick="deleteCalc()">DEL</button>
+                        <button class="calc-equal" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="todoApp" class="mini-app">
+                <h2><i class="fas fa-list-check"></i> To-Do List</h2>
+                <p class="app-subtitle">Make every day productive!</p>
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Enter your task">
+                    <button class="btn primary-btn" onclick="addTodo()">Add</button>
+                </div>
+                <ul id="todoList" class="app-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+        <div class="section-heading">
+            <p>HAVE A PROJECT IN MIND?</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's work together!</h3>
+                <p>Have an idea or want to collaborate? Feel free to send me a message.</p>
+                <p><i class="fas fa-envelope"></i> aksham@example.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> India</p>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                <p id="formStatus" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="logo">Aksham<span>.</span></a>
+        <p>Designed & Built by Aksham | © <span id="year"></span> All Rights Reserved.</p>
+        <a href="#home" class="back-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
